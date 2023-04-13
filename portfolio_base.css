@@ -2,46 +2,103 @@
 
 /*
 Author: Walton
-Date: 2/3/2023
+Date: 4/13/2023
 Description: CSS file for e-portfolio site
-5 different selectors with CSS rules 
+
 */
+* {
+    margin: 0;
+    padding: 0;
+}
+.resume p { background-color: #fff;}
 
 body {
-    background-color: rgb(22, 181, 212);
+    background-color: #fff;
+    font-family: "Hanken Grotesk";
+}
+
+.main-body {
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.aboutme h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+}
+.aboutme h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 3rem;
+}
+.aboutme .avatar {
+    width: 210px;
+    border-radius:50%;
+}
+.aboutme {
+    padding-bottom: 4rem;
+}
+.more {
+    background-color: #21aa38;
     color: #fff;
-    font-size: 16px;
+    padding-top: 4rem;
+    text-align: center;
 }
-a {
+.more h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    font-weight: 800;
+}
+.more h2 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+    padding-bottom: 3rem;
+    width: 60%;
+    margin: 0 auto;
+}
+.testimonials {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.testimonials h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    font-weight: 800;
+}
+.testimonials h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #141c3a;
+}
+.testimonials img {
+    width: 100px;
+    border-radius:50%;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+.testimonials .quote {
+    font-size: 1.75rem;
+    font-weight: 300;
+    font-family: "eurostile", sans-serif;
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+}
+.testimonials .people h1 {
+    font-size: 1.25rem;
+}
+.testimonials .people h2 {
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #21aa38;
     color: #fff;
-    font-size: 20px;
-    text-decoration: none;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
 }
-a:hover {
-    color: #fff;
-    text-decoration: underline;
-}
-nav ul li {
-    float: left;
-    list-style-type: none;
-    margin-right: 25px;
-}
-nav {
-    overflow: hidden;
-}
-h1 {
-    font-size: 25px;
-    color: rgb(218, 65, 192);
-}
-p:first-child {
-    background-color: bisque;
-}
-p:nth-child(2) {
-    background-color: green;
-}
-p:last-child {
-    background-color: red;
-}
-p:nth-last-child(2) {
-    background-color: blue;
+footer img {
+    width: 200px;
 }

@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Walton' E-Portfolio</title>
     <link rel="stylesheet" href="portfolio_base.css">
+    <link rel="stylesheet" href="portfolio_layout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hanken Grotesk">
 <body>
-    <nav>
-        <ul>
+    <!-- Nav bar  -->
+    <nav class="top-nav">
+        <div>Walton Z.</div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="goals.html">Goals</a></li>
@@ -16,17 +24,37 @@
             <li><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
+    <!-- end of Nav bar -->
     
-    <section>
-        <h1>Home Page</h1>
-        <div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laboriosam iste architecto id vel asperiores! Maiores porro delectus odit error, nobis temporibus sequi facilis repellat dolore, labore, voluptates ratione corporis! </p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dignissimos numquam quasi repellat nulla error eum dolore facere alias quod maxime obcaecati impedit aspernatur, est minus mollitia nihil quaerat commodi.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dignissimos numquam quasi repellat nulla error eum dolore facere alias quod maxime obcaecati impedit aspernatur, est minus mollitia nihil quaerat commodi.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dignissimos numquam quasi repellat nulla error eum dolore facere alias quod maxime obcaecati impedit aspernatur, est minus mollitia nihil quaerat commodi.</p>
+    <section class="main-body">
+        <div class="aboutme">
+            <h1>Frontend & Backend Developer</h1>
+            <h2>I code, I learn and I love what I do.</h2>
+            <img class="avatar" src="imgs/avatar.jpeg" alt="">
+        </div>
+        <div class="more">
+            <h1>Hi, I'm Walton. Nice to meet you.</h1>
+            <h2>I am a 1st year IT programming student in NSCC. I will graduate in 2025.1.</h2>
+        </div>
+        <div class="testimonials">
+            <h1>Testimonials</h1>
+            <h2>People I've worked with have said some nice things....</h2>
+            <div class="people">
+                <img class="avatar" src="imgs/abdu.jpeg">
+                <p class="quote">"Walton is a real pleasure to work with and we look forward to working with him again. He's definitely the kind of developer you can trust with a project from start to finish."</p>
+                <h1>AbdulWahab Bakare</h1>
+                <h2>student, NSCC</h2>
+            </div>
         </div>
     </section>
 
-    <footer>Copyright@2023</footer>
+    <footer>
+        <div class="content">
+            <p>See you again!</p>
+            <div class="social-icons">
+                <a href="###"><img src="imgs/social-icons.webp" alt=""></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

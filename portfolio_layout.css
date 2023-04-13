@@ -7,17 +7,7 @@ Description:
 Add media queries for phone,tablet,and desktop 
 Grid Layout design mainly for the resume page
 */
-* {
-    margin: 0;
-    padding: 0;
-}
-.resume p { background-color: #fff;}
 
-body {
-    background-color: #fff;
-    color: black;
-    font-family: "Hanken Grotesk";
-}
 .resume {
     background-color: #fff;
     width: 80%;
