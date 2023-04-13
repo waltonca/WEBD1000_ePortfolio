@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Walton' E-Portfolio</title>
     <link rel="stylesheet" href="portfolio_base.css">
+    <link rel="stylesheet" href="portfolio_layout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hanken Grotesk">
 <body>
-    <nav>
-        <ul>
+    <!-- Nav bar  -->
+    <nav class="top-nav">
+        <div class="logo">Walton Z.</div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="goals.html">Goals</a></li>
@@ -16,11 +24,41 @@
             <li><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
+    <!-- end of Nav bar -->
     
-    <section>
+    <section class="main-body skills">
         <h1>Skills</h1>
+        <div class="list">
+            <h5>Development</h5>
+            <ul class="shortlist__list">
+                <li>Javascript <span>es6+/typescript</span></li>
+                <li>NodeJS</li>
+                <li>Version Control<span>git</span></li>
+                <li>HTML</li>
+                <li>Task Runners <span>webpack/gulp</span></li>
+                <li>Command Line</li>
+                <li>CSS <span>postcss/sass/scss</span></li>
+                <li>PHP</li>
+            </ul>
+        </div>
+        <div class="list">
+            <h5>General</h5>
+            <ul class="shortlist__list">
+                <li>Office</li>
+                <li>Communication</li>
+            </ul>
+        </div>
     </section>
     
-    <footer></footer>
+    <!-- Footer  -->
+    <footer>
+        <div class="content">
+            <p>See you again!</p>
+            <div class="social-icons">
+                <a href="###"><img src="imgs/social-icons.webp" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <!-- end of Footer  -->
 </body>
 </html>

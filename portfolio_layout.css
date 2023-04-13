@@ -283,6 +283,11 @@ Grid Layout design mainly for the resume page
     .reHeading h2 {
         font-size: 14px;
     }
+
+    .skills .list ul {
+        width: calc(99.99% * 3/4 - (32px - 32px * 3/4));
+        columns: 1;
+    }
 }
 
 @media only screen and (min-width: 481px) {
@@ -325,6 +330,16 @@ Grid Layout design mainly for the resume page
         'skill1 skill3'
         'skill2 skill4';
         gap: 0;
+    }
+    .skills .list {
+        display: flex;
+    }
+    .skills .list ul {
+        width: calc(99.99% * 3/4 - (32px - 32px * 3/4));
+        columns: 2;
+    }
+    .skills .list ul li {
+        margin-bottom: 32px;
     }
 }
 

@@ -175,3 +175,41 @@ footer img {
 .contact form input[type=submit]:hover {
     background-color: #45a049;
 }
+
+/* Skills page */
+.skills {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+.skills h1 {
+    font-size: 2rem;
+}
+.skills .list {
+    padding-top: 2rem;
+}
+.skills .list h5 {
+    width: calc(99.99% * 1/4 - (32px - 32px * 1/4));
+    margin-right: 32px;
+    color: #21aa38;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    margin-bottom: calc(32px/2);
+}
+.skills .list ul {
+    list-style: none;
+    line-height: 1.25;
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+.skills .list ul li {
+    font-size: 1.25rem;
+    margin-bottom: calc(32px/2);
+}
+.skills .list ul li > span {
+    font-size: .75rem;
+    margin-left: calc(32px/4);
+    color: #ccc;
+}
