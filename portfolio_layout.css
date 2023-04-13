@@ -1,0 +1,342 @@
+@charset "utf-8";
+
+/*
+Author: Walton
+Date: 3/10/2023
+Description: 
+Add media queries for phone,tablet,and desktop 
+Grid Layout design mainly for the resume page
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+.resume p { background-color: #fff;}
+
+body {
+    background-color: #fff;
+    color: black;
+    font-family: "Hanken Grotesk";
+}
+.resume {
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.reHeading {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #74e867;
+}
+.reHeading h1 {
+    font-size: 3em;
+    color: #000;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.reHeading h1 .givenName {color: #74e867;}
+.reHeading h2 {font-size: 18px;}
+.reHeading h3 {font-size: 14px;}
+.reHeading h3 .phone {padding-left: 30px;padding-right: 30px;}
+.reHeading h3 a { 
+    color: #000;
+    font-size: 14px;
+}
+
+.reAbout {
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #74e867;
+    padding-top: 20px;
+}
+.reAbout p {
+    background-color: #fff;
+}
+.reAbout h1 {
+    color: #74e867;
+    padding-bottom: 20px;
+}
+
+.reProSkills {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #74e867;
+}
+.reProSkills h1 {
+    color: #74e867;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.reTechSkills {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #74e867;
+}
+.reTechSkills h1 {
+    color: #74e867;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+.reEdu {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #74e867;
+}
+.reEdu li {
+    list-style-type: none;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.reEdu h1 {
+    color: #74e867;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.reEdu h3 {
+    font-weight: bold;
+}
+.reEdu h4 {
+    font-weight: normal;
+}
+.reEdu p {
+    font-weight: lighter;
+    font-style: italic;
+}
+.reEdu .left {
+    float: left;
+    width: 80%;
+}
+.reEdu .right {
+    float: right;
+    width: 20%;
+    text-align: right;
+}
+
+.reExp {
+    padding-bottom: 60px;
+    border-bottom: 1px solid #74e867;
+}
+.reExp h1 {
+    color: #74e867;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.reExp h3 {
+    font-weight: bold;
+}
+.reExp h4 {
+    font-weight: normal;
+}
+.reExp p {
+    font-weight: lighter;
+    font-style: italic;
+}
+.reExp .left {
+    float: left;
+    width: 80%;
+}
+.reExp .right {
+    float: right;
+    width: 20%;
+    text-align: right;
+}
+.reExp .list-show {
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.reExp .list-show ul {
+    padding-left: 20px;
+}
+.reExp .list-show li {
+    list-style-type: disc;
+}
+/* Hamburger menu ,Mobile first*/
+
+  /* -- */
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00BAF0;
+    background: linear-gradient(to left, #18de39, #41c7e5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FFF;
+    height: 50px;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+  
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+
+/* media queries */
+@media only screen and (max-width: 480px) {
+	/* Mobile phone */
+    .menu-button-container {
+        display: flex;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+        border: 1px solid #00BAF0;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: #18de39;
+    }
+    .menu > li:not(:last-child) {
+        border-bottom: 1px solid red;
+    }
+    .menu a {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        height: 2.5em;
+        line-height: 2.5em;
+    }
+    .menu a:hover {
+        text-decoration: none;
+    }
+    .reHeading h1 {
+        font-size: 2em;
+    }
+    .reHeading h2 {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    /* Tablet */
+    .reHeading { grid-area: reHeading;}
+    .reAbout { grid-area: reAbout;}
+    .reProSkills { grid-area: reProSkills;}
+    .reTechSkills { grid-area: reTechSkills;}
+    .reEdu { grid-area: reEdu;}
+    .reExp { grid-area: reExp;}
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'reHeading reHeading'
+        'reAbout reAbout'
+        'reProSkills reTechSkills'
+        'reEdu reEdu'
+        'reExp reExp';
+        gap: 0;
+    }
+    .reTechSkills .skill1 {grid-area: skill1;}
+    .reTechSkills .skill2 {grid-area: skill2;}
+    .reTechSkills .skill3 {grid-area: skill3;}
+    .reTechSkills .skill4 {grid-area: skill4;}
+    .reTechSkills .small-grid-container-2 {
+        display: grid;
+        grid-template-areas: 
+        'skill1 skill2'
+        'skill3 skill4';
+        gap: 0;
+    }
+    .reProSkills .skill1 {grid-area: skill1;}
+    .reProSkills .skill2 {grid-area: skill2;}
+    .reProSkills .skill3 {grid-area: skill3;}
+    .reProSkills .skill4 {grid-area: skill4;}
+    .reProSkills .small-grid-container-1 {
+        display: grid;
+        grid-template-areas: 
+        'skill1 skill3'
+        'skill2 skill4';
+        gap: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    /* Desktop */
+
+}
+
+
