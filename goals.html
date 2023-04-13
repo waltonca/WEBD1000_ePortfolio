@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Walton' E-Portfolio</title>
     <link rel="stylesheet" href="portfolio_base.css">
+    <link rel="stylesheet" href="portfolio_layout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hanken Grotesk">
 <body>
-    <nav>
-        <ul>
+    <!-- Nav bar  -->
+    <nav class="top-nav">
+        <div class="logo">Walton Z.</div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="goals.html">Goals</a></li>
@@ -16,11 +24,29 @@
             <li><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
+    <!-- end of Nav bar -->
     
-    <section>
+    <section class="main-body goals">
         <h1>Goals</h1>
+        <p>My 5 short-term goals in the future.</p>
+        <ul>
+            <li>Build a good foundation on Javascript,CSS,HTML</li>
+            <li>Learn more CSS3 animation part</li>
+            <li>Leran a Javascript framework, like: Angular or React</li>
+            <li>Learn more about backend development</li>
+            <li>Learn more about database</li>
+        </ul>
     </section>
     
-    <footer></footer>
+    <!-- Footer  -->
+    <footer>
+        <div class="content">
+            <p>See you again!</p>
+            <div class="social-icons">
+                <a href="###"><img src="imgs/social-icons.webp" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <!-- end of Footer  -->
 </body>
 </html>

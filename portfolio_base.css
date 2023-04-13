@@ -10,6 +10,7 @@ Description: CSS file for e-portfolio site
     margin: 0;
     padding: 0;
 }
+
 .resume p { background-color: #fff;}
 
 body {
@@ -101,4 +102,25 @@ footer {
 }
 footer img {
     width: 200px;
+}
+
+/* Goals page */
+.goals {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+.goals h1 {
+    font-size: 2rem;
+}
+.goals p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding-bottom: 2rem;
+}
+.goals li {
+    font-size: 1.25rem;
+    line-height: 1.5;
 }
